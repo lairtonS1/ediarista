@@ -14,11 +14,11 @@
     {% for diarista in diaristas %}
     <tr>
         <td>{{diarista.id}}</td>
-        <td>{{diarista.nome}}</td>
+        <td>{{diarista.nome_completo}}</td>
         <td>{{diarista.email}}</td>
         <td>{{diarista.cep}}</td>
         <td>
-            <a href="#">editar</a>
+            <a href="{% url 'editar_diarista' diarista.id %}">editar</a>
             <a href="#">remover</a>
         </td>
 
