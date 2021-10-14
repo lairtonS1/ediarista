@@ -15,5 +15,5 @@ def cadastrar_diarista(request):
 
 
 def listar_diarista(request):
-    diaristas = Diarista.objects.all() #equivale a select *from Diaristas
+    diaristas = Diarista.objetos.all() 
     return render(request, 'lista_diarista.html', {'diaristas':diaristas})

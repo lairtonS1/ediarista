@@ -16,3 +16,4 @@ class Diarista(models.Model):
     estado = models.CharField(max_length=2, null=False, blank=False)
     codigo_ibge = models.IntegerField(null=False, blank=False)
     foto_usuario = models.ImageField(null=False, blank=False)
+    objetos = models.Manager()
